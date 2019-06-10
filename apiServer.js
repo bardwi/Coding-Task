@@ -26,8 +26,8 @@ app.use(cookieParser());
 // APIs
 
 
-/*var mongoose = require('mongoose');
-const MongoClient = require('mongodb').MongoClient;
+var mongoose = require('mongoose');
+/*const MongoClient = require('mongodb').MongoClient;
 
 const uri = "mongodb+srv://bardwi:@Alicante123@cluster0-zbdsg.mongodb.net/test?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true });
