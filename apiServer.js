@@ -26,7 +26,7 @@ app.use(cookieParser());
 // APIs
 
 
-//var mongoose = require('mongoose');
+var mongoose = require('mongoose');
 const MongoClient = require('mongodb').MongoClient;
 
 const uri = "mongodb+srv://bardwi:@Alicante123@cluster0-zbdsg.mongodb.net/test?retryWrites=true&w=majority";
@@ -48,8 +48,8 @@ app.use(session({
     saveUninitialized:true,
     resave:false,
     //cookie:{maxAge: 1000 * 60 * 60 * 24 * 2},
-    cookie: {secure: false},
-    store: new MongoStore({mongooseConnection: db, ttl: 2 * 24 * 60 * 60})
+    //cookie: {secure: false},
+    //store: new MongoStore({mongooseConnection: db, ttl: 2 * 24 * 60 * 60})
 }))
 
 
