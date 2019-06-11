@@ -41,10 +41,10 @@ db.on('error', console.error.bind(console, '# connection error: '));
 
 app.use(session({
     secret: 'mySecretString',
-    saveUninitialized:true,
+    saveUninitialized:false,
     resave:false,
     //cookie:{maxAge: 1000 * 60 * 60 * 24 * 2},
-    cookie: {secure: false},
+    //cookie: {secure: true},
     store: new MongoStore({mongooseConnection: db, ttl: 2 * 24 * 60 * 60})
 }))
 

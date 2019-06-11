@@ -1,5 +1,5 @@
 "use strict"
-import axios from 'axios';
+import {axios} from 'axios';
 import React from 'react';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
