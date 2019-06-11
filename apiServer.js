@@ -29,9 +29,11 @@ app.use(cookieParser());
 var mongoose = require('mongoose');
 
 
+//var MongoClient = require('mongodb').MongoClient;
 
 
-mongoose.connect('mongodb://localhost:27017/notebookshop');
+mongoose.connect('mongodb+srv://bardwi:bardwiberlin@cluster0-zbdsg.mongodb.net/test?retryWrites=true&w=majority',{ useNewUrlParser: true });
+//mongoose.connect('mongodb://localhost:27017/notebookshop');
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, '# connection error: '));
