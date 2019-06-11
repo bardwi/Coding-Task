@@ -29,16 +29,9 @@ app.use(cookieParser());
 var mongoose = require('mongoose');
 
 
-const uri = "mongodb+srv://bardwi:@Alicante123@cluster0-zbdsg.mongodb.net/test?retryWrites=true&w=majority";
-const MongoClient = require('mongodb').MongoClient;
-const client = new MongoClient(uri, { useNewUrlParser: true });
-client.connect(err => {
-  const collection = client.db("notebookshop").collection("notebooks");
-  // perform actions on the collection object
-  client.close();
-});
 
-//mongoose.connect('mongodb://localhost:27017/notebookshop');
+
+mongoose.connect('mongodb://localhost:27017/notebookshop');
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, '# connection error: '));
