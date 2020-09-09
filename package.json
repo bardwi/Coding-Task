@@ -23,7 +23,7 @@
     "express-session": "^1.16.1",
     "heroku": "^7.25.0",
     "http-errors": "~1.6.3",
-    "http-proxy": "^1.17.0",
+    "http-proxy": "^1.18.1",
     "mongodb": "^3.2.7",
     "mongoose": "^5.5.13",
     "morgan": "^1.9.1",
