@@ -28,7 +28,7 @@
     "mongoose": "^5.5.13",
     "morgan": "^1.9.1",
     "prop-types": "^15.7.2",
-    "pug": "2.0.0-beta11",
+    "pug": "3.0.1",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.9",
     "react-dom": "^16.8.6",
